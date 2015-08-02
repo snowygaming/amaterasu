@@ -122,6 +122,15 @@ a:focus {
     color: #fff;
 }
 
+.nav-logo {
+    display: block;
+    float: left;
+    margin-top: 8px;
+    height: 30px;
+    width: 30px;
+    background: url(../img/wolf_fill.svg) no-repeat top left;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -147,7 +156,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-2.png) no-repeat bottom center scroll; 
+    background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll; 
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -155,7 +164,45 @@ a:focus {
     -o-background-size: cover;
 }
 
+.about {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/about-bg.jpg) no-repeat bottom center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.timescape {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/timescape-bg.jpg) no-repeat bottom center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about .about-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.timescape .timescape-body {
     display: table-cell;
     vertical-align: middle;
 }
@@ -180,6 +227,24 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 26px;
+    }
+    
+    .about {
+        height: 100%;
+        padding: 0;
+    }
+
+    .about .about-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .about .about-body .about-text {
+        font-size: 26px;
+    }
+    
+    .timescape {
+        height: 100%;
+        padding: 0;
     }
 }
 
@@ -287,10 +352,6 @@ span.stretch {
     text-align: center;
 }
 
-.leader {
-    width: 100%;
-    padding: 50px 0;
-}
 
 .class-section {
     width: 100%;
@@ -332,6 +393,32 @@ span.stretch {
 }
 
 .guide-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #262626;
+    background: url(../img/guide-bg.jpg) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+.dark-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/guide-bg.jpg) no-repeat center center scroll;
+    background-color: #262626;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+.light-section {
     width: 100%;
     padding: 50px 0;
     color: #262626;
