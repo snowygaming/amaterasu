@@ -53,3 +53,8 @@
     background-color: #000;
 
 }
+
+.pomchi-flat {
+    background: url(../../img/about/pomchi-flat.jpg) no-repeat top center scroll; 
+    background-color: #000;
+}

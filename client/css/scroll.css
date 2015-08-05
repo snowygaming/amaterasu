@@ -178,6 +178,19 @@ a:focus {
     -o-background-size: cover;
 }
 
+.stream {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/stream-bg.png) no-repeat center center scroll; 
+    background-color: #262626;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 .timescape {
     display: table;
     width: 100%;
@@ -382,9 +395,9 @@ span.stretch {
 .media-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #262626;
     background: url(../img/class-bg.jpg) no-repeat center center scroll;
-    background-color: #262626;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -395,9 +408,9 @@ span.stretch {
 .guide-section {
     width: 100%;
     padding: 50px 0;
-    color: #262626;
+    color: #fff;
     background: url(../img/guide-bg.jpg) no-repeat center center scroll;
-    background-color: #fff;
+    background-color: #262626;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -409,7 +422,7 @@ span.stretch {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/guide-bg.jpg) no-repeat center center scroll;
+    background: url(../img/dark-bg.jpg) no-repeat center center scroll;
     background-color: #262626;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -417,18 +430,26 @@ span.stretch {
     -o-background-size: cover;
     text-align: center;
 }
+.dark {
+    color: #fff;
+    background-color: #262626;
+}
 
 .light-section {
     width: 100%;
     padding: 50px 0;
     color: #262626;
-    background: url(../img/guide-bg.jpg) no-repeat center center scroll;
+    background: url(../img/light-bg.jpg) no-repeat center center scroll;
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
+}
+.light {
+    color: #262626;
+    background-color: #fff;
 }
 
 .separator.pattern {
