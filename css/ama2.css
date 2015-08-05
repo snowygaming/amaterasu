@@ -1,0 +1,166 @@
+
+
+
+.nav-logo {
+    display: block;
+    float: left;
+    margin-top: 8px;
+    height: 30px;
+    width: 30px;
+    background: url(../img/wolf_fill.svg) no-repeat top left;
+}
+
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll; 
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.about {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/about-bg.jpg) no-repeat bottom center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.stream {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/stream-bg.png) no-repeat center center scroll; 
+    background-color: #262626;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.timescape {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/timescape-bg.jpg) no-repeat bottom center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about .about-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.timescape .timescape-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+    
+    .about {
+        height: 100%;
+        padding: 0;
+    }
+
+    .about .about-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .about .about-body .about-text {
+        font-size: 26px;
+    }
+    
+    .timescape {
+        height: 100%;
+        padding: 0;
+    }
+}
+
+
+.class {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/class-bg.jpg) no-repeat center center scroll;
+    background-color: #262626;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+
+.leader {
+    width: 100%;
+    padding: 0 0;
+    color: #262626;
+    background: url(../img/leader-bg.jpg) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.media {
+    width: 100%;
+    padding: 50px 0;
+    color: #262626;
+    background: url(../img/media-bg.jpg) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
