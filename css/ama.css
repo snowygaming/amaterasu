@@ -3,8 +3,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
-    background-color: #fff;
+    color: #151515;
+    background-color: #f0f0f0;
 }
 
 html {
@@ -144,116 +144,15 @@ a:focus {
     }
 }
 
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll; 
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.about {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/about-bg.jpg) no-repeat bottom center scroll; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.stream {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    color: #fff;
-    background: url(../img/stream-bg.png) no-repeat center center scroll; 
-    background-color: #262626;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.timescape {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/timescape-bg.jpg) no-repeat bottom center scroll; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.about .about-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.timescape .timescape-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
-    
-    .about {
-        height: 100%;
-        padding: 0;
-    }
-
-    .about .about-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .about .about-body .about-text {
-        font-size: 26px;
-    }
-    
-    .timescape {
-        height: 100%;
-        padding: 0;
-    }
+.logo {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:250px;
+    margin-bottom:-64px;
+    display:block;
+    height:140px;
+    width:140px;
+    background: url(../img/wolf_fill.svg) no-repeat top left;
 }
 
 .btn-circle {
@@ -342,16 +241,13 @@ span.stretch {
 .counter
 {
     line-height: 100px;
-    color:white;
     font-size:100px;
     font-weight: bold;
 }
 
 .counter_holder
 {
-    color: rgb(255, 255, 255); 
     opacity: 1; 
-    color:white;
     font-size:50px;
     font-weight: bold;
 }
@@ -361,52 +257,12 @@ span.stretch {
 }
 
 
-.class {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/class-bg.jpg) no-repeat center center scroll;
-    background-color: #262626;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-}
-
-
-.leader {
-    width: 100%;
-    padding: 0 0;
-    color: #262626;
-    background: url(../img/leader-bg.jpg) no-repeat center center scroll;
-    background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.media {
-    width: 100%;
-    padding: 50px 0;
-    color: #262626;
-    background: url(../img/class-bg.jpg) no-repeat center center scroll;
-    background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-}
-
-
 .dark-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #f0f0f0;
     background: url(../img/dark-bg.jpg) no-repeat center center scroll;
-    background-color: #262626;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -414,16 +270,16 @@ span.stretch {
     text-align: center;
 }
 .dark {
-    color: #fff;
-    background-color: #262626;
+    color: #f0f0f0;
+    background-color: #000;
 }
 
 .light-section {
     width: 100%;
     padding: 50px 0;
-    color: #262626;
+    color: #151515;
     background: url(../img/light-bg.jpg) no-repeat center center scroll;
-    background-color: #fff;
+    background-color: #f0f0f0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -431,8 +287,8 @@ span.stretch {
     text-align: center;
 }
 .light {
-    color: #262626;
-    background-color: #fff;
+    color: #151515;
+    background-color: #f0f0f0;
 }
 
 .separator.pattern {
@@ -452,22 +308,7 @@ span.stretch {
     margin: 0px 0;
 }
 
-@media(min-width:767px) {
-    .class-section {
-        padding: 50px 0 50px 0;
-    }
 
-    .media-section {
-        padding: 100px 0;
-    }
-    
-    .guide-section {
-        padding: 100px 0;
-    }
-
-
-   
-}
 
 .btn {
     border-radius: 0;
@@ -554,3 +395,62 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+.parallax-window-bg {
+    min-height: 1500px;
+    background: transparent;
+}
+
+.transparent { 
+    background: transparent;
+}
+
+
+
+.sep_wh_top {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../img/sep_wh_top.png) no-repeat center;
+    background-color:#151515;
+}
+
+.sep_wh_bot {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../img/sep_wh_bot.png) no-repeat center;
+    background-color:#151515;
+}
+
+.sep_bl_top {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../img/sep_bl_top.png) no-repeat center;
+    background-color:#151515;
+}
+
+.sep_bl_bot {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../img/sep_bl_bot.png) no-repeat center;
+    background-color:#f0f0f0;
+}
+
+.sep_trans {
+    position:absolute;
+    margin-top:0px;
+    background-color:rgba(0,0,0,0);
+}
+
+.sep_abs {
+    margin-top:-100px;
+}
+

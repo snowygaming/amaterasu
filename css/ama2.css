@@ -1,6 +1,4 @@
 
-
-
 .nav-logo {
     display: block;
     float: left;
@@ -18,8 +16,23 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll; 
+    background: url(../img/intro-bg-3.jpg) no-repeat bottom center scroll; 
     background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.stream {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/stream-bg.jpg) no-repeat top center scroll;
+    background-color: #151515;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -40,40 +53,12 @@
     -o-background-size: cover;
 }
 
-.stream {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    color: #fff;
-    background: url(../img/stream-bg.png) no-repeat center center scroll; 
-    background-color: #262626;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.timescape {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/timescape-bg.jpg) no-repeat bottom center scroll; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.about .about-body {
+.stream .stream-body {
     display: table-cell;
     vertical-align: middle;
 }
@@ -105,51 +90,45 @@
         font-size: 26px;
     }
     
-    .about {
+    .stream {
         height: 100%;
         padding: 0;
     }
-
-    .about .about-body .brand-heading {
+    .stream .stream-body .brand-heading {
         font-size: 100px;
     }
 
-    .about .about-body .about-text {
+    .stream .stream-body .about-text {
         font-size: 26px;
     }
     
-    .timescape {
-        height: 100%;
-        padding: 0;
-    }
 }
 
 
 .class {
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
+    padding: 100px 0px;
+    /*  For light theme
+            color: #151515;
+        For dark theme
+            color: #fff;
+    */
+    color: #151515; 
     background: url(../img/class-bg.jpg) no-repeat center center scroll;
-    background-color: #262626;
+    /*  For light theme
+            background-color: #f0f0f0;
+        For dark theme
+            background-color: #151515;
+    */
+    background-color: #f0f0f0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
+    
 }
 
-
-.leader {
-    width: 100%;
-    padding: 0 0;
-    color: #262626;
-    background: url(../img/leader-bg.jpg) no-repeat center center scroll;
-    background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
 .media {
     width: 100%;
@@ -164,3 +143,45 @@
     text-align: center;
 }
 
+.join {
+    width: 100%;
+    padding: 100px 0;
+    color: #f0f0f0;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+
+.rule {
+    width: 100%;
+    padding: 200px 0;
+    color: #151515;
+    background-color: #f0f0f0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+
+
+
+.flat {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 0px 0;
+    color: #151515;
+    background-color: #f0f0f0;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
