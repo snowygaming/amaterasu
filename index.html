@@ -39,231 +39,334 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	<script language="Javascript" type="text/javascript" src="js/smoothPageScroll.js"></script>
 		
-    
-    <link rel="import" id="nav" href="_nav.html">
-    <link rel="import" id="intro" href="_intro.html">
-    <link rel="import" id="class" href="_class.html">
-    <link rel="import" id="media" href="_media.html">
-    <link rel="import" id="about" href="_about.html">
-    <link rel="import" id="who" href="_who.html">
-    <link rel="import" id="where" href="_where.html">
-    <link rel="import" id="leader" href="_leader.html">
-    <link rel="import" id="join" href="_join.html">
-    <link rel="import" id="rule" href="_rule.html">
-    <link rel="import" id="stream" href="_stream.html">
-    <link rel="import" id="footer" href="_footer.html">
-
+	<style>
+        .flip3D{ width:240px; height:200px; margin:10px; float:left; }
+        .flip3D > .front{
+        	position:absolute;
+        	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+        	transform: perspective( 600px ) rotateY( 0deg );
+        	background:#FC0; width:240px; height:200px; border-radius: 7px;
+        	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+        	transition: -webkit-transform .5s linear 0s;
+        	transition: transform .5s linear 0s;
+        }
+        .flip3D > .back{
+        	position:absolute;
+        	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+        	transform: perspective( 600px ) rotateY( 180deg );
+        	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+        	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+        	transition: -webkit-transform .5s linear 0s;
+        	transition: transform .5s linear 0s;
+        }
+        .flip3D:hover > .front{
+        	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+        	transform: perspective( 600px ) rotateY( -180deg );
+        }
+        .flip3D:hover > .back{
+        	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+        	transform: perspective( 600px ) rotateY( 0deg );
+        }
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     
     <!-- Navigation -->
-    <script>
-		var getImport  = document.querySelector('#nav');
-		var getContent = getImport.import.querySelector('#nav');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-    
-    <div style="background-color: #000;height:50px;"><div class="sep_bl_top sep_trans" style="height: 150px;"></div></div>
-        
-    <!-- Intro Header -->
-    <section id="intro-section" class="text-center">
-        <script>
-    		var getImport  = document.querySelector('#intro');
-    		var getContent = getImport.import.querySelector('#intro');
-    	    document.body.appendChild(document.importNode(getContent, true));
-    	</script>
-	</section>
-
-    <div class="sep_wh_bot sep_trans sep_abs"></div>
-    
-    <!-- Class Section -->
-    <section id="class-section" class="text-center">
-    <script>
-		var getImport  = document.querySelector('#class');
-		var getContent = getImport.import.querySelector('#class');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
+    <section id="nav">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="nav-logo"></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <span class="">&nbsp;Amaterasu</span>
+                    </a>
+                </div>
+                
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>                  <li>
+                        <a class="page-scroll" href="/">Home</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="#about">About Us</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="#join">join us</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="stream.html">LiveSteam</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="http://xamaterasux.enjin.com/">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                
+            </div>
+            <!-- /.container -->
+        </nav>
     </section>
     
-    <div class="sep_wh_top sep_trans"></div>
+    <div style="background-color: #000;height:50px;"><div class="sep_bl_top sep_trans iefix" style="height: 150px;"></div></div>
+        
+    <!-- Intro Header -->
+    <section id="intro" class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="logo"></div>
+                        <a href="#class" class="page-scroll">
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
     
-    <!-- Media Section -->
-    <!--
-    <script>
-		var getImport  = document.querySelector('#media');
-		var getContent = getImport.import.querySelector('#media');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-	-->
+    <!-- Class Section -->
+    <section id="class" class="class text-center">
+        
+        <div class="container">
+            <div class="">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">12</span></div>
+                    <h4><span>Lancer</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">20</span></div>
+                    <h4><span>Warrior</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">6</span></div>
+                    <h4><span>Berserker</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">12</span></div>
+                    <h4><span>Gunner</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">6</span></div>
+                    <h4><span>Reaper</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">3</span></div>
+                    <h4><span>Slayer</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">2</span></div>
+                    <h4><span>Archer</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">3</span></div>
+                    <h4><span>Sorcerer</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">20</span></div>
+                    <h4><span>Priest</span></h4>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter_holder center"><span class="counter">3</span></div>
+                    <h4><span>Mystic</span></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sep_wh_top sep_trans iefix"></div>
+    
+
 
     <!-- About Section -->
-    <!--
-    <div id="about-section">
-        <script>
-    		var getImport  = document.querySelector('#about');
-    		var getContent = getImport.import.querySelector('#about');
-    	    document.body.appendChild(document.importNode(getContent, true));
-    	</script>
-	</div>
-	-->
-    <section id="about-section" class="text-center">
+    <section id="about" class="text-center">
         <div class="parallax-window-bg" data-parallax="scroll" data-image-src="img/about-bg.jpg"></div>
     </section>
 
-    <div class="sep_wh_bot sep_trans sep_abs"></div>
+    <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
     
 	<!-- Who Section -->
-    <script>
-		var getImport  = document.querySelector('#who');
-		var getContent = getImport.import.querySelector('#who');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-	
-    <div class="sep_bl_bot sep_trans sep_abs"></div>
-    
-	<!-- Where Section -->
-    <script>
-		var getImport  = document.querySelector('#where');
-		var getContent = getImport.import.querySelector('#where');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-	
-    <div class="sep_bl_top sep_trans"></div>
+    <section id="who" class="light-section text-center">
+        <div class="container text-left">
+            <h2><span class="stretch">Who we are</span></h2><br>
+            <h2>Game &#58; <span style="color: #ff0000;">tera</span></h2>
+            <p> Amaterasu has been around for almost a year now. Beginning first as a love child of two separate guilds; Koori no Okami and Neverland.  Koori no Okami; a guild known for its complicated name and love of Abscess hard mode.  Neverland; a small guild of mostly EU gamers. Responsible for Surgeon first Archer, who later wisened up and changed class.  It's then at the time during Tera's patch the "Wounded World," that we found each other. Sheltering more than a dozen Surgeon's and Determined. Setting our eyes on the new Shiny title and Vision Maker gear that awaits us around the corner.  We began as a guild. We became a guild of friends. Now inseparable, we tackle endgame content together and continue to recruit new friends along the way...though the story doesn't end there.</p>
+            <br><br>
+        </div>
+    </section>
 
-	<!-- leader Section -->
-	<!--
-    <script>
-		var getImport  = document.querySelector('#leader');
-		var getContent = getImport.import.querySelector('#leader');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-	-->
+    <div class="sep_bl_bot sep_trans sep_abs iefix"></div>
+    
+    <!-- Where Section -->
+    <section id="where" class="dark-section">
+        <div class="container text-left">
+            <h2><span class="stretch">Where we are</span></h2><br>
+            <h2>region &#58; <span style="color: #ff0000;">na</span></h2>
+            <h2>SERVER &#58; <span style="color: #ff0000;">Mount Tyrannas</span></h2>
+        </div>
+    </section>
+	
+    <div class="sep_bl_top sep_trans iefix"></div>
+
     <!-- Leader Section -->
     <section id="leader" class="">
         <div class="">
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/shanax-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-10 col-md-offset-1 text-left">
                     <h1>shanax / <span style="color: #ff0000;">Guild Master</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">GUNNER</span></h4>
                 </div>
             </div>
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/family-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>Family / <span style="color: #ff0000;">Leader</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">PRIEST</span></h4>
                 </div>
             </div>
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/greenstrike-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>Greenstrike / <span style="color: #ff0000;">Leader</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">Reaper</span></h4>
                 </div>
             </div> 
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/vio-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>Vio / <span style="color: #ff0000;">Leader</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">Warrior</span></h4>
                 </div>
             </div> 
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/snowy-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>snowy / <span style="color: #ff0000;">evilgenius</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">PRIEST</span></h4>
                 </div>
             </div>
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/sleepyhead-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>sleepyhead / <span style="color: #ff0000;">sleepy</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">reaper</span></h4>
                 </div>
             </div>
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/hemmingway-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>hemmingway / <span style="color: #ff0000;">BM</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">Slayer</span></h4>
                 </div>
             </div>    
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/leader/pomchi-flat.jpg"></div>
-            <div class="sep_wh_bot sep_trans sep_abs"></div>
+            <div class="sep_wh_bot sep_trans sep_abs iefix"></div>
             <div class="flat">
                 <div class="col-md-4 col-md-offset-7 text-left">
                     <h1>pomchi / <span style="color: #ff0000;">thee archer</span></h1>
                     <h4>CLASS / <span style="color: #ff0000;">archer</span></h4>
                 </div>
             </div>
-            <div class="sep_wh_top sep_trans"></div>
+            <div class="sep_wh_top sep_trans iefix"></div>
             
         </div>
     </section>
     
-	<!-- Join Section -->
-	<div id="join-section">
-        <script>
-    		var getImport  = document.querySelector('#join');
-    		var getContent = getImport.import.querySelector('#join');
-    	    document.body.appendChild(document.importNode(getContent, true));
-    	</script>
-	</div>
+     <!-- Join Section -->
+    <section id="join" class="join text-center">
+        <div class="container text-left" style="margin-top: 100px;">
+            <h2><span class="stretch">Join Us</span></h2><br>
+            <h4 style="text-transform: none;"><span>Recruitment is now open for experienced players. Hit us up if you want to join the best and most entertaining PVE Guild in Tera NA.</span></h4>
+            <br>
+            
+            <h4><span style="color: #ff0000;">minimum requirements / </span>
+                <div>
+                    <u2 style="text-transform: none;">
+                        <li>+12 Schisma weapon/gloves +9 chest/boots</li>
+                        <li>Perm Etching II / 4/2 | 4/4 accessories</li>
+                        <li>Blue innerwear</li>
+                        <li>Pass DPS test</li>
+                    </u2>
+                </div>
+            </h4>
+            <h4><span style="color: #ff0000;">in game contact / </span><span style="text-transform: none;">Family, Greenstrike, Vio, Xpect</span></h4>
+        </div>
+    </section>
 
-    <div class="sep_bl_top sep_trans"></div>
+
+    <div class="sep_bl_top sep_trans iefix"></div>
+        
+    <!-- rule Section -->
+    <section id="rule" class="rule light-section text-center">
+      
+        <div class="container container-fluid text-left">
+            <h2><span class="stretch">guild rules</span></h2><br>
+            <div class="row">
+                <div class="col-md-4">    
+                    <div class="flip3D">
+                        <div class="back"><img src="img/1_b.jpg"></div>
+                        <div class="front"><img src="img/1.jpg"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">  
+                    <div class="flip3D">
+                        <div class="back"><img src="img/2_b.jpg"></div>
+                        <div class="front"><img src="img/2.jpg"></div>
+                    </div> 
+                </div>
+                <div class="col-md-4">  
+                    <div class="flip3D">
+                        <div class="back"><img src="img/3_b.jpg"></div>
+                        <div class="front"><img src="img/3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sep_bl_bot sep_trans sep_abs iefix"></div>
     
-	<!-- Rule Section -->
-    <script>
-		var getImport  = document.querySelector('#rule');
-		var getContent = getImport.import.querySelector('#rule');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
-	
-    <div class="sep_bl_bot sep_trans sep_abs"></div>
-    
-    <!-- Stream Section -->
-    <!--
-    <div id="stream-section">
-        <script>
-            setTimeout(function() {
-        		var getImport  = document.querySelector('#stream');
-        		var getContent = getImport.import.querySelector('#stream');
-        	    document.body.appendChild(document.importNode(getContent, true));
-            },5000);
-    	</script>
-	</div>
-	-->
-	
     <!-- Footer -->
-    <script>
-		var getImport  = document.querySelector('#footer');
-		var getContent = getImport.import.querySelector('#footer');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
+    <footer id="footer" class="dark">
+        <div class="container text-center">
+            <span>Copyright &copy; SnowyGaming corp. 2015</span>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

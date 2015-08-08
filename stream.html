@@ -40,53 +40,117 @@
 	<script language="Javascript" type="text/javascript" src="js/smoothPageScroll.js"></script>
 		
     
-    <link rel="import" id="nav-ext" href="_nav_ext.html">
-    <link rel="import" id="stream" href="_stream.html">
-    <link rel="import" id="channel" href="_channel.html">
-    <link rel="import" id="footer" href="_footer.html">
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <script>
-		var getImport  = document.querySelector('#nav-ext');
-		var getContent = getImport.import.querySelector('#nav-ext');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
+    <section id="nav-ext">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="nav-logo"></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <span class="">&nbsp;Amaterasu</span>
+                    </a>
+                </div>
+                
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>                  <li>
+                        <a class="page-scroll" href="/">Home</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="/#about">About Us</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="/#join">join us</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="stream.html">LiveSteam</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="http://xamaterasux.enjin.com/">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                
+            </div>
+            <!-- /.container -->
+        </nav>
+    </section>
     
-    <div style="background-color: #000;height:50px;"><div class="sep_bl_top sep_trans" style="height: 150px;"></div></div>
+    <div style="background-color: #000;height:50px;"><div class="sep_bl_top sep_trans iefix" style="height: 150px;"></div></div>
+    	
+    <!-- Stream Header -->
+    <section id="stream" class="stream">
+        <div class="stream-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="logo"></div>
+                        <a href="#channel" class="page-scroll">
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
-    <!-- Stream Section -->
-    <div id="stream-section">
-        <script>
-    		var getImport  = document.querySelector('#stream');
-    		var getContent = getImport.import.querySelector('#stream');
-    	    document.body.appendChild(document.importNode(getContent, true));
-    	</script>
-	</div>
+    <div class="sep_bl_bot sep_trans sep_abs iefix"></div>
+        
+    <!-- channel Section -->
+    <section id="channel" class="dark-section text-center">
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-md-6 center">
+        	        <iframe src="http://www.twitch.tv/enmasseentertainment/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/enmasseentertainment?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [enmasseentertainment] LIVE &#64; twitch.tv/enmasseentertainment</a>
+        		</div>
+        		<div class="col-md-6 center">
+        		    <iframe src="http://www.twitch.tv/miyuzakix/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/miyuzakix?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Shanax] LIVE &#64; twitch.tv/miyuzakix</a>
+        		</div>
+        		<div class="col-md-6 center">
+        	        <iframe src="http://www.twitch.tv/supergoldyvolant/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/supergoldyvolant?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Greenstrike] LIVE &#64; twitch.tv/supergoldyvolant</a>
+        		</div>
+        		<div class="col-md-6 center">
+        		    <iframe src="http://www.twitch.tv/hsowlalrym/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/hsowlalrym?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Xpect] LIVE &#64; twitch.tv/hsowlalrym</a>
+        		</div>
+        		<div class="col-md-6 center">
+        	        <iframe src="http://www.twitch.tv/seasonedmango/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/seasonedmango?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Violee] LIVE &#64; twitch.tv/seasonedmango</a>
+        		</div>
+        		<div class="col-md-6 center">
+        		    <iframe src="http://www.twitch.tv/xpropel/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/xpropel?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Varying] LIVE &#64; twitch.tv/xpropel</a>
+        		</div>
+        		<div class="col-md-6 center">
+        	        <iframe src="http://www.twitch.tv/ntorin/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/ntorin?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Magdillia] LIVE &#64; twitch.tv/ntorin</a>
+        		</div>
+        		<div class="col-md-6 center">
+        		    <iframe src="http://www.twitch.tv/pookieexbear/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/pookieexbear?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; margin: auto;font-weight:normal; font-size:10px;text-decoration:underline;">Watch [Salinda] LIVE &#64; twitch.tv/pookieexbear</a>
+        		</div>
+        	</div>
+        </div>
+        <br><br>
+    </section>
 	
-    <div class="sep_bl_bot sep_trans sep_abs"></div>
-    
-	<!-- Channel Section -->
-    <div id="channel-section">
-        <script>
-    		var getImport  = document.querySelector('#channel');
-    		var getContent = getImport.import.querySelector('#channel');
-    	    document.body.appendChild(document.importNode(getContent, true));
-    	</script>
-	</div>
 	
-	
-    <div class="sep_bl_bot sep_trans sep_abs"></div>
+    <div class="sep_bl_bot sep_trans sep_abs iefix"></div>
 	
     <!-- Footer -->
-    <script>
-		var getImport  = document.querySelector('#footer');
-		var getContent = getImport.import.querySelector('#footer');
-	    document.body.appendChild(document.importNode(getContent, true));
-	</script>
+    <footer id="footer" class="dark">
+        <div class="container text-center">
+            <span>Copyright &copy; SnowyGaming corp. 2015</span>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
